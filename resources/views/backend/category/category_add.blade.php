@@ -7,12 +7,12 @@
                 <div class="col-12">
                     <div class="card">
                         <div class="card-body">
-                            <h4 class="card-title">Add Unit Page</h4><br><br>
+                            <h4 class="card-title">Add Category Page</h4><br><br>
 
-                            <form id="myForm" method="post" action="{{ route('unit.store') }}">
+                            <form id="myForm" method="post" action="{{ route('category.store') }}">
                                 @csrf
                                 <div class="mb-3 row">
-                                    <label for="example-text-input" class="col-sm-2 col-form-label">Unit Name</label>
+                                    <label for="example-text-input" class="col-sm-2 col-form-label">Category Name</label>
                                     <div class="col-sm-10 form-group">
                                         <input class="form-control" type="text" name="name">
                                     </div>
@@ -38,7 +38,7 @@
                         },
                         messages: {
                             name: {
-                                required: 'Please Enter Unit',
+                                required: 'Please Category Unit',
                             },
                         },
                         errorElement: 'span',
